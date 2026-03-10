@@ -155,6 +155,61 @@ const About = () => {
         </div>
       </section>
 
+      {/* ── Soutenir le projet ────────────────────────── */}
+      <section className="bg-white border-t border-slate-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+          <motion.div
+            variants={stagger}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: '-60px' }}
+          >
+            <motion.div variants={fadeUp} className="inline-flex items-center gap-2 bg-amber-50 text-amber-700 rounded-full px-4 py-2 mb-4 text-sm font-medium border border-amber-100">
+              ☕ Soutenir le projet
+            </motion.div>
+            <motion.h2 variants={fadeUp} className="text-2xl font-bold text-slate-900 mb-3">
+              AfriPrix vous est utile ?
+            </motion.h2>
+            <motion.p variants={fadeUp} className="text-slate-500 max-w-md mx-auto mb-8 leading-relaxed">
+              Ce projet est développé et maintenu bénévolement. Si AfriPrix vous aide à économiser,
+              vous pouvez soutenir son développement directement via Mobile Money.
+            </motion.p>
+
+            <motion.div variants={stagger} className="flex flex-col sm:flex-row gap-4 justify-center">
+              {/* TMoney */}
+              <motion.div
+                variants={fadeUp}
+                className="bg-slate-50 border border-slate-200 rounded-2xl px-8 py-6 flex flex-col items-center gap-2"
+              >
+                <div className="w-12 h-12 rounded-xl bg-[#e8f5e9] flex items-center justify-center mb-1">
+                  <span className="text-2xl">🟢</span>
+                </div>
+                <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">TMoney</span>
+                <span className="text-2xl font-extrabold text-slate-900 tracking-wide">91 24 29 86</span>
+                <span className="text-xs text-slate-400">Togocel</span>
+              </motion.div>
+
+              {/* Flooz */}
+              <motion.div
+                variants={fadeUp}
+                className="bg-slate-50 border border-slate-200 rounded-2xl px-8 py-6 flex flex-col items-center gap-2"
+              >
+                <div className="w-12 h-12 rounded-xl bg-[#fff3e0] flex items-center justify-center mb-1">
+                  <span className="text-2xl">🟠</span>
+                </div>
+                <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Flooz</span>
+                <span className="text-2xl font-extrabold text-slate-900 tracking-wide">96 63 21 22</span>
+                <span className="text-xs text-slate-400">Moov Africa</span>
+              </motion.div>
+            </motion.div>
+
+            <motion.p variants={fadeUp} className="text-xs text-slate-400 mt-6">
+              Merci pour votre soutien 🙏 — Merveille · AKIM
+            </motion.p>
+          </motion.div>
+        </div>
+      </section>
+
       {/* ── CTA ───────────────────────────────────────── */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
         <motion.div

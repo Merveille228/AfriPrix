@@ -31,6 +31,7 @@ const ModernNavbar = () => {
     { path: '/map',       label: 'Carte' },
     { path: '/add-price', label: 'Ajouter un prix', protected: true },
     { path: '/dashboard', label: 'Dashboard',       protected: true },
+    { path: '/about',     label: 'À propos' },
   ]
 
   return (

@@ -13,6 +13,7 @@ import MapPage from './pages/MapPage'
 import Settings from './pages/Settings'
 import Admin from './pages/Admin'
 import MarketPage from './pages/MarketPage'
+import About from './pages/About'
 import AnimatedBackground from './components/AnimatedBackground'
 import DebugAuth from './components/DebugAuth'
 
@@ -96,6 +97,7 @@ function App() {
               />
               <Route path="/map" element={<MapPage />} />
               <Route path="/marche" element={<MarketPage />} />
+              <Route path="/about" element={<About />} />
               <Route
                 path="/settings"
                 element={
